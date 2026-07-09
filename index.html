@@ -1133,17 +1133,85 @@ table.deck-table tr:nth-child(even) td{background:rgba(255,255,255,.03);}
     <div>
 <div class="color-card border-orange">
       <h4>Proceso Hincado de Postes</h4>
-      <p style="color:#cfd4e2;font-size:.9rem;line-height:1.55;margin-bottom:.8rem;"><b>📌 Proceso 1 - Prefactibilidad (Principal / Backup)</b>Flujo coordinado entre <b style="color:#fff;">💼 Comercial → 🗺️ GIS → 👷 PEI → 🚗 OPU (Inspección) → 📄 Informe + 📍KMZ + 📸 Fotos →🗺️ GIS →  👷 PEI → 💼 Comercial (Confirma espera/costos) →👷 PEI →  🗺️ GIS → 📑 Regulatorio → 🏛️ Ente Regulador → 🗺️ GIS → 🚗 OPU → 🛒 Compras → 🚜 Contratista → ✅ Fiscalización → 🗺️ GIS (OT Factible)</b>.</p>
+      
+<div class="color-card border-orange">
+    <h4>Proceso Hincado de Postes</h4>
 
-      <p style="color:#cfd4e2;font-size:.9rem;line-height:1.55;margin-bottom:.8rem;"><b>📌 Proceso 2 - OT Factible (Principal)</b>Flujo coordinado entre <b style="color:#fff;">💼 Comercial → 👷 PEI → 🚗 OPU (Ejecución) → ❓¿Requiere postería? → ❌ No: 🔧 Instalación | ✅ Sí: 📄 Informe + 📍KMZ + 📸 Fotos → 👷 PEI  → 🗺️ GIS →  👷 PEI  → 💼 Comercial → 📑 Regulatorio → 🏛️ Ente Regulador → 🗺️ GIS → 🚗 OPU → 🛒 Compras → 🚜 Contratista → ✅ Fiscalización → 🗺️ GIS → 👷 PEI → 🔧 Instalación</b>.</p>
+    <div class="process-title">
+        📌 Proceso 1 - Prefactibilidad (Principal / Backup)
+    </div>
 
-      <ul>
-        <li>GIS escala tarea de prefactibilidad; PEI agenda con OPU.</li>
-        <li>OPU ejecuta inspección y adjunta KMZ y fotos.</li>
-        <li>Regulatorio gestiona autorización con ente regulador.</li>
-        <li>Compras asigna contratista; Fiscalización valida trabajos.</li>
-        <li>GIS pasa OT a factible al culminar el plantado.</li>
-      </ul>
+    <div class="swimlane">
+
+        <div class="lane">
+            <div class="lane-label">💼 Comercial</div>
+            <div class="node" data-step="1"  data-desc="Recepción de requerimiento"></div>
+            <div class="node" data-step="8"  data-desc="Confirma espera y costos"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">🗺️ GIS</div>
+            <div class="node" data-step="2"  data-desc="Factibilidad inicial"></div>
+            <div class="node" data-step="6"  data-desc="Revisión evidencias"></div>
+            <div class="node" data-step="10" data-desc="Actualización GIS"></div>
+            <div class="node" data-step="13" data-desc="Retorno ente regulador"></div>
+            <div class="node" data-step="18" data-desc="OT Factible"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">👷 PEI</div>
+            <div class="node" data-step="3" data-desc="Validación técnica"></div>
+            <div class="node" data-step="7" data-desc="Revisión informe"></div>
+            <div class="node" data-step="9" data-desc="Aprobación"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">🚗 OPU</div>
+            <div class="node" data-step="4" data-desc="Inspección"></div>
+            <div class="node" data-step="14" data-desc="Ejecución"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">📄 Evidencias</div>
+            <div class="node" data-step="5" data-desc="Informe + KMZ + Fotos"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">📑 Regulatorio</div>
+            <div class="node" data-step="11" data-desc="Gestión regulatoria"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">🏛️ Regulador</div>
+            <div class="node" data-step="12" data-desc="Aprobación ente"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">🛒 Compras</div>
+            <div class="node" data-step="15" data-desc="Compra materiales"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">🚜 Contratista</div>
+            <div class="node" data-step="16" data-desc="Construcción"></div>
+        </div>
+
+        <div class="lane">
+            <div class="lane-label">✅ Fiscalización</div>
+            <div class="node" data-step="17" data-desc="Validación final"></div>
+        </div>
+
+    </div>
+
+    <div id="processInfo" class="process-info">
+        Iniciando flujo...
+    </div>
+
+</div>
+
+
+
+
     </div>
     </div>
   </div>
@@ -1229,12 +1297,14 @@ table.deck-table tr:nth-child(even) td{background:rgba(255,255,255,.03);}
       <div class="res-card-desc">Registro de materiales sobrantes por equipo del departamento.</div>
       <div class="res-card-links"><a class="res-link" href="https://docs.google.com/spreadsheets/d/1CTsZ4oeivtKa7aYo7VT61m_20mDNEeWZlN5r79j-2rU/edit?gid=208028553#gid=208028553" target="_blank"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Abrir archivo</a></div>
     </div>
+
       <div class="res-card">
       <div class="res-card-title">Recursos Complementarios</div>
       <div class="res-card-desc">Recursos adicionales para la gestión de la Planificación.</div>
       <div class="res-card-links"><a class="res-link" href="https://docs.google.com/spreadsheets/d/1060abEXJKfGvXZ97VSx_GCUqGJKsWvpLpHfs2XmMALs/edit?gid=1437009371#gid=1437009371" target="_blank"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Abrir archivo</a></div>
     </div>
-    </div>
+
+   </div>
   </div>
   <div id="rt-chats" class="res-tab-panel">
     <div class="chat-grid">
