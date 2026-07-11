@@ -1452,16 +1452,21 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
   <div style="
     position: absolute;
     inset: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
   ">
     <img
       src="Imagen24.png"
       alt="Productos sobre red MPLS"
       style="
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
         display: block;
+        object-fit: contain;
       ">
   </div>
 </section>
