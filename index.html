@@ -1550,25 +1550,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
 
 
-
-
-
-
-<<section class="slide theme-navy" data-index="21" id="slide-21">
-<div class="slide-pad">
-  <div class="badge"><span class="badge-num">04</span> Gestión de Productos</div>
-  <h2 class="title-xl">Collaboration</h2>
-
-  <div class="color-grid">
-    <div class="color-card border-yellow"><h4>COU Telefonía IP:</h4><p>Tres esquemas según alcance (mismo punto, región o varias regiones). Checklist obligatorio.</p></div>
-    <div class="color-card border-blue"><h4>COU Telefonía Fija:</h4><p>Validar modelo de equipo (HG8045 requiere Gateway; HG8145/8245 no). Cliente coloca su teléfono.</p></div>
-    <div class="color-card border-pink"><h4>COU Videoconferencia:</h4><p>Tarea de inspección primero; luego tarea de implementación con personal eléctrico y L2.</p></div>
-    
-  </div>
-</div></section>
-
-
-
 <section class="slide theme-navy" data-index="20" id="slide-20">
 
     <div class="slide-pad" style="padding-top:calc(36px + 1.4rem);">
@@ -1589,7 +1570,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">Internet Dedicado / Internet MPLS</span>
 
                 <p>
-                    Para estas instalaciones es indispensable contar con 3 OTs ingresadas en Telcos y asociadas al mismo Login y 1 tarea Security escalada desde Comercial.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
                     <br><b>•</b> Tipo de Enlace: Principal o Back Up.
                 </p>
@@ -1605,7 +1585,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">Concentrador L3MPLS</span>
 
                 <p>
-                    Dirigido a clientes corporativos. Corresponde al punto matriz del cual dependen los enlaces extremos.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
                     <br><b>•</b> Tipo de Enlace: Principal o Back Up.
                     <br><b>•</b> Capacidad según la suma de enlaces extremos.
@@ -1622,7 +1601,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">L3MPLS</span>
 
                 <p>
-                    Dirigido a clientes corporativos.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
                     <br><b>•</b> Tipo de Enlace: Principal o Back Up.
                     <br><b>•</b> Requiere concentrador activo.
@@ -1639,7 +1617,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">IRU Internet</span>
 
                 <p>
-                    Exclusivo para CEDIA. Funciona bajo la misma lógica de MPLS; la diferencia principal es comercial.
                     <br><b>•</b> Metraje estándar: 800 m.
                     <br><b>•</b> Aplicable para unidades educativas.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
@@ -1657,7 +1634,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">IRU Datos</span>
 
                 <p>
-                    Exclusivo para CEDIA. Funciona bajo la misma lógica de MPLS.
                     <br><b>•</b> Metraje estándar: 800 m.
                     <br><b>•</b> Aplicable para unidades educativas.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
@@ -1671,12 +1647,36 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 </div>
             </div>
 
+          </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="slide theme-navy" data-index="21" id="slide-21">
+
+    <div class="slide-pad" style="padding-top:calc(36px + 1.4rem);">
+
+        <div class="badge">
+            <span class="badge-num">04</span>
+            Gestión de Productos
+        </div>
+
+        <h2 class="title-xl" style="margin-bottom:1.1rem;">
+            Connectivity: Red MPLS
+        </h2>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.85rem;">
+
+            
             <!-- Internet SDWAN -->
             <div class="task-card">
                 <span class="task-proc-tag">Internet SDWAN</span>
 
                 <p>
-                    Tecnología orientada a redes empresariales.
                     <br><b>•</b> Enlaces Activo-Activo.
                     <br><b>•</b> No aplica concepto de Back Up.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
@@ -1695,7 +1695,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">L3MPLS SDWAN</span>
 
                 <p>
-                    Tecnología orientada a redes empresariales.
                     <br><b>•</b> Enlaces Activo-Activo.
                     <br><b>•</b> No aplica concepto de Back Up.
                     <br><b>•</b> Tipo de UM: Fibra, Radio, UTP.
@@ -1715,7 +1714,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">Fibra Oscura</span>
 
                 <p>
-                    Telconet proporciona únicamente la infraestructura de fibra óptica.
                     <br><b>•</b> Interviene el departamento FIBRA.
                     <br><b>•</b> Puede requerir inspección.
                     <br><b>•</b> Cada orden habilita un hilo de fibra.
@@ -1733,7 +1731,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">Clear Channel</span>
 
                 <p>
-                    Servicio de conectividad punto a punto mediante un canal dedicado.
                     <br><b>•</b> Interviene el departamento FIBRA.
                     <br><b>•</b> Puede requerir inspección.
                     <br><b>•</b> Cada orden habilita un hilo de fibra.
@@ -1756,7 +1753,25 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
 
 
+
 <section class="slide theme-navy" data-index="22" id="slide-22">
+<div class="slide-pad">
+  <div class="badge"><span class="badge-num">04</span> Gestión de Productos</div>
+  <h2 class="title-xl">Collaboration</h2>
+
+  <div class="color-grid">
+    <div class="color-card border-yellow"><h4>COU Telefonía IP:</h4><p>Tres esquemas según alcance (mismo punto, región o varias regiones). Checklist obligatorio.</p></div>
+    <div class="color-card border-blue"><h4>COU Telefonía Fija:</h4><p>Validar modelo de equipo (HG8045 requiere Gateway; HG8145/8245 no). Cliente coloca su teléfono.</p></div>
+    <div class="color-card border-pink"><h4>COU Videoconferencia:</h4><p>Tarea de inspección primero; luego tarea de implementación con personal eléctrico y L2.</p></div>
+    
+  </div>
+</div></section>
+
+
+
+
+
+<section class="slide theme-navy" data-index="23" id="slide-23">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">05</span> Gestión de Productos </div>
 <img
@@ -1773,7 +1788,7 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 </section>
 
 
-<section class="slide theme-navy" data-index="23" id="slide-23">
+<section class="slide theme-navy" data-index="24" id="slide-24">
 <div class="slide-pad">
   <div class="badge"><span class="badge-num">05</span> Actividades Complementarias</div>
   <h2 class="title-xl">Actividades Complementarias de Implementación</h2>
@@ -1796,7 +1811,7 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
 
 
-<section class="slide theme-navy" data-index="24" id="slide-24">
+<section class="slide theme-navy" data-index="25" id="slide-25">
 <div class="slide-pad" style="padding-top:calc(36px + 1rem);">
   <div class="badge"><span class="badge-num">05</span> Actividades Complementarias</div>
   <h2 class="title-xl" style="margin-bottom:.3rem;">Proceso Hincado de Postes</h2>
@@ -1900,7 +1915,7 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
 //22
 
-<section class="slide theme-navy" data-index="25" id="slide-25">
+<section class="slide theme-navy" data-index="26" id="slide-26">
 <div class="slide-pad" style="padding-top:calc(36px + 1rem);">
   <div class="badge"><span class="badge-num">05</span> Actividades Complementarias</div>
   <h2 class="title-xl" style="margin-bottom:.3rem;">Proceso Hincado de Postes</h2>
@@ -1938,7 +1953,7 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
 
 //cambio diapositiva 23
-<section class="slide theme-navy" data-index="26" id="slide-26">
+<section class="slide theme-navy" data-index="27" id="slide-27">
 <div class="slide-pad">
   <div class="badge"><span class="badge-num">05</span> Actividades Complementarias</div>
   <h2 class="title-xl">Trabajos interurbanos || Capacidades especiales</h2>
@@ -1973,7 +1988,7 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 </div></section>
 
 
-<section class="slide theme-navy" data-index="27" id="slide-27">
+<section class="slide theme-navy" data-index="28" id="slide-28">
 <div class="slide-pad" style="padding-top:calc(36px + .9rem);">
   <div class="badge"><span class="badge-num">06</span> Recursos Planificación</div>
   <h2 class="title-xl" style="margin-bottom:.8rem;">Archivos en Línea y Chats de Gestión</h2>
@@ -2064,7 +2079,7 @@ function rTab(btn, panelId) {
   document.getElementById(panelId).classList.add('active');
 }
 </script></section>
-<section class="slide theme-navy" data-index="28" id="slide-28">
+<section class="slide theme-navy" data-index="29" id="slide-29">
 <div class="slide-pad">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
   <h2 class="title-xl">Gestión de Planificación</h2>
@@ -2081,7 +2096,7 @@ function rTab(btn, panelId) {
 
 
 </section>
-<section class="slide theme-navy" data-index="29" id="slide-29">
+<section class="slide theme-navy" data-index="30" id="slide-30">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Notificación: Asignación de la OT / Tarea</h2>
@@ -2114,7 +2129,7 @@ function rTab(btn, panelId) {
 
 
 
-<section class="slide theme-navy" data-index="30" id="slide-30">
+<section class="slide theme-navy" data-index="31" id="slide-31">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Revisión de la OT — Ingreso al Login</h2>
@@ -2144,7 +2159,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="31" id="slide-31">
+<section class="slide theme-navy" data-index="32" id="slide-32">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Revisión de la OT — Datos Generales del Punto y OT</h2>
@@ -2173,7 +2188,7 @@ function rTab(btn, panelId) {
 </div>
 </section>
 
-<section class="slide theme-navy" data-index="32" id="slide-32">
+<section class="slide theme-navy" data-index="33" id="slide-33">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Revisión de la OT — Datos UM</h2>
@@ -2196,7 +2211,7 @@ function rTab(btn, panelId) {
 
 
 
-<section class="slide theme-navy" data-index="33" id="slide-33">
+<section class="slide theme-navy" data-index="34" id="slide-34">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Revisión de la Tarea</h2>
@@ -2232,7 +2247,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="34" id="slide-34">
+<section class="slide theme-navy" data-index="35" id="slide-35">
   <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
 
     <div class="badge">
@@ -2269,7 +2284,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="35" id="slide-35">
+<section class="slide theme-navy" data-index="36" id="slide-36">
   <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
 
     <div class="badge">
@@ -2322,7 +2337,7 @@ function rTab(btn, panelId) {
 
 
 
-<section class="slide theme-navy" data-index="36" id="slide-36">
+<section class="slide theme-navy" data-index="37" id="slide-37">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Registro en la Planificación</h2>
@@ -2344,7 +2359,7 @@ function rTab(btn, panelId) {
 </div>
 </section>
 
-<section class="slide theme-navy" data-index="37" id="slide-37">
+<section class="slide theme-navy" data-index="38" id="slide-38">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Formatos de Correos</h2>
@@ -2367,7 +2382,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="38" id="slide-38">
+<section class="slide theme-navy" data-index="39" id="slide-39">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Planificar la OT en Telcos</h2>
@@ -2390,7 +2405,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="39" id="slide-39">
+<section class="slide theme-navy" data-index="40" id="slide-40">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Cambiar a Estado Planificada</h2>
@@ -2417,7 +2432,7 @@ function rTab(btn, panelId) {
 </section>
 
 
-<section class="slide theme-navy" data-index="40" id="slide-40">
+<section class="slide theme-navy" data-index="41" id="slide-41">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">07</span> Gestión Planificación</div>
  <h2 class="title-xl">Actualizar Estados en los Archivos de Gestión</h2>
@@ -2441,7 +2456,7 @@ function rTab(btn, panelId) {
 
 
 
-<section class="slide theme-navy" data-index="41" id="slide-41">
+<section class="slide theme-navy" data-index="42" id="slide-42">
   <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
 
     <div class="badge">
@@ -2476,7 +2491,7 @@ function rTab(btn, panelId) {
   </div>
 </section>
 
-<section class="slide theme-navy" data-index="42" id="slide-42">
+<section class="slide theme-navy" data-index="43" id="slide-43">
   <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
 
     <div class="badge">
@@ -2523,7 +2538,7 @@ function rTab(btn, panelId) {
 //elimINAR DIAPISITIVA 39
 //elimINAR DIAPISITIVA 40
 
-<section class="slide theme-navy" data-index="43" id="slide-43">
+<section class="slide theme-navy" data-index="44" id="slide-44">
     <div class="badge">
       <span class="badge-num">07</span> Gestión Planificación
     </div>
@@ -2578,7 +2593,7 @@ function rTab(btn, panelId) {
   </div>
 </div></section>
 
-<section class="slide theme-navy" data-index="44" id="slide-44">
+<section class="slide theme-navy" data-index="45" id="slide-45">
   <div class="slide-pad">
     <div class="badge">
       <span class="badge-num">08</span> Gestión Proyectos
@@ -2610,7 +2625,7 @@ function rTab(btn, panelId) {
 
 
 
-<section class="slide theme-navy" data-index="45" id="slide-45">
+<section class="slide theme-navy" data-index="46" id="slide-46">
 <div class="slide-pad" style="padding-top:calc(36px + .8rem);padding-bottom:.5rem;display:flex;flex-direction:column;gap:.75rem;">
   <div class="badge"><span class="badge-num">08</span> Gestión Proyectos</div>
  <h2 class="title-xl">Planificación Proyectos Públicos</h2>
@@ -2640,7 +2655,7 @@ function rTab(btn, panelId) {
 </div>
 <div class="slide-foot">
   <button class="nav-btn" onclick="go(-1)" aria-label="Anterior">&#8592;</button>
-  <div class="dots"><span class="dot active" onclick="jumpTo(0)"></span><span class="dot" onclick="jumpTo(1)"></span><span class="dot" onclick="jumpTo(2)"></span><span class="dot" onclick="jumpTo(3)"></span><span class="dot" onclick="jumpTo(4)"></span><span class="dot" onclick="jumpTo(5)"></span><span class="dot" onclick="jumpTo(6)"></span><span class="dot" onclick="jumpTo(7)"></span><span class="dot" onclick="jumpTo(8)"></span><span class="dot" onclick="jumpTo(9)"></span><span class="dot" onclick="jumpTo(10)"></span><span class="dot" onclick="jumpTo(11)"></span><span class="dot" onclick="jumpTo(12)"></span><span class="dot" onclick="jumpTo(13)"></span><span class="dot" onclick="jumpTo(14)"></span><span class="dot" onclick="jumpTo(15)"></span><span class="dot" onclick="jumpTo(16)"></span><span class="dot" onclick="jumpTo(17)"></span><span class="dot" onclick="jumpTo(18)"></span><span class="dot" onclick="jumpTo(19)"></span><span class="dot" onclick="jumpTo(20)"></span><span class="dot" onclick="jumpTo(21)"></span><span class="dot" onclick="jumpTo(22)"></span><span class="dot" onclick="jumpTo(23)"></span><span class="dot" onclick="jumpTo(24)"></span><span class="dot" onclick="jumpTo(25)"></span><span class="dot" onclick="jumpTo(26)"></span><span class="dot" onclick="jumpTo(27)"></span><span class="dot" onclick="jumpTo(28)"></span><span class="dot" onclick="jumpTo(29)"></span><span class="dot" onclick="jumpTo(30)"></span><span class="dot" onclick="jumpTo(31)"></span><span class="dot" onclick="jumpTo(32)"></span><span class="dot" onclick="jumpTo(33)"></span><span class="dot" onclick="jumpTo(34)"></span><span class="dot" onclick="jumpTo(35)"></span><span class="dot" onclick="jumpTo(36)"></span><span class="dot" onclick="jumpTo(37)"></span><span class="dot" onclick="jumpTo(38)"></span><span class="dot" onclick="jumpTo(39)"></span><span class="dot" onclick="jumpTo(40)"></span><span class="dot" onclick="jumpTo(41)"></span><span class="dot" onclick="jumpTo(42)"></span><span class="dot" onclick="jumpTo(43)"></span> <span class="dot" onclick="jumpTo(44)"><span class="dot" onclick="jumpTo(45)"></span></div>
+  <div class="dots"><span class="dot active" onclick="jumpTo(0)"></span><span class="dot" onclick="jumpTo(1)"></span><span class="dot" onclick="jumpTo(2)"></span><span class="dot" onclick="jumpTo(3)"></span><span class="dot" onclick="jumpTo(4)"></span><span class="dot" onclick="jumpTo(5)"></span><span class="dot" onclick="jumpTo(6)"></span><span class="dot" onclick="jumpTo(7)"></span><span class="dot" onclick="jumpTo(8)"></span><span class="dot" onclick="jumpTo(9)"></span><span class="dot" onclick="jumpTo(10)"></span><span class="dot" onclick="jumpTo(11)"></span><span class="dot" onclick="jumpTo(12)"></span><span class="dot" onclick="jumpTo(13)"></span><span class="dot" onclick="jumpTo(14)"></span><span class="dot" onclick="jumpTo(15)"></span><span class="dot" onclick="jumpTo(16)"></span><span class="dot" onclick="jumpTo(17)"></span><span class="dot" onclick="jumpTo(18)"></span><span class="dot" onclick="jumpTo(19)"></span><span class="dot" onclick="jumpTo(20)"></span><span class="dot" onclick="jumpTo(21)"></span><span class="dot" onclick="jumpTo(22)"></span><span class="dot" onclick="jumpTo(23)"></span><span class="dot" onclick="jumpTo(24)"></span><span class="dot" onclick="jumpTo(25)"></span><span class="dot" onclick="jumpTo(26)"></span><span class="dot" onclick="jumpTo(27)"></span><span class="dot" onclick="jumpTo(28)"></span><span class="dot" onclick="jumpTo(29)"></span><span class="dot" onclick="jumpTo(30)"></span><span class="dot" onclick="jumpTo(31)"></span><span class="dot" onclick="jumpTo(32)"></span><span class="dot" onclick="jumpTo(33)"></span><span class="dot" onclick="jumpTo(34)"></span><span class="dot" onclick="jumpTo(35)"></span><span class="dot" onclick="jumpTo(36)"></span><span class="dot" onclick="jumpTo(37)"></span><span class="dot" onclick="jumpTo(38)"></span><span class="dot" onclick="jumpTo(39)"></span><span class="dot" onclick="jumpTo(40)"></span><span class="dot" onclick="jumpTo(41)"></span><span class="dot" onclick="jumpTo(42)"></span><span class="dot" onclick="jumpTo(43)"></span> <span class="dot" onclick="jumpTo(44)"></span><span class="dot" onclick="jumpTo(45)"></span><span class="dot" onclick="jumpTo(46)"></span></div>
   <button class="nav-btn" onclick="go(1)" aria-label="Siguiente">&#8594;</button>
 </div>
 <script>
