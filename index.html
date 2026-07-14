@@ -1475,8 +1475,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
 
                 <div>
                     <p>
-                        Para estas instalaciones es indispensable contar con 3 OTs ingresadas en Telcos y asociadas al mismo Login y 1 Tarea Security escalada desde comercial. 
-	
     		<br><b>1. </b>TELEWORKER
     		<br><b>2. </b>SECURITY NG FIREWALL IP
     		<br><b>3. </b>TELEWORKER
@@ -1495,8 +1493,6 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
                 <span class="task-proc-tag">Teleworker Wifi</span>
                              <div>
                     <p>
-                       Para estas instalaciones es indispensable contar con 4 OTs ingresadas en Telcos y asociadas al mismo Login y 1 Tarea Security escalada desde comercial
-
     		<br><b>1. </b>TELEWORKER
     		<br><b>2. </b>SECURITY NG FIREWALL IP
     		<br><b>3. </b>TELEWORKER
@@ -2659,11 +2655,11 @@ function rTab(btn, panelId) {
   <button class="nav-btn" onclick="go(1)" aria-label="Siguiente">&#8594;</button>
 </div>
 <script>
-const TOTAL = 45;
+const TOTAL = 46;
 let cur = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
-const SECTIONS = [[2,'01'],[3,'02'],[12,'03'],[18,'04'],[23,'05'],[27,'06'],[28,'07'],[44,'08']];
+const SECTIONS = [[2,'01'],[3,'02'],[12,'03'],[18,'04'],[24,'05'],[27,'06'],[28,'07'],[45,'08']];
 //const SECTIONS = [[2,'01'],[3,'02'],[13,'03'],[18,'04'],[21,'05'],[23,'06'],[24,'07'],[40,'08']];
 function activeMod(n) {
   let active = null;
@@ -2677,7 +2673,7 @@ function update() {
     if (i === cur) s.classList.add('active');
   });
   dots.forEach((d,i) => d.classList.toggle('active', i === cur));
-  document.getElementById('counter').textContent = String(cur+1).padStart(2,'0') + ' / 44';
+  document.getElementById('counter').textContent = String(cur+1).padStart(2,'0') + ' / 46';
   document.getElementById('progress').style.width = ((cur+1)/TOTAL*100).toFixed(2) + '%';
   slides[cur].scrollTop = 0;
   activeMod(cur);
