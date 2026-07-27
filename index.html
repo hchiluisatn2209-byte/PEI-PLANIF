@@ -145,6 +145,20 @@ h1,h2,h3,.font-head{font-family:'Outfit',sans-serif;font-weight:700;}
 }
 #mod-nav .mn-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
 #mod-nav .mn-btn.active{background:var(--gold-badge);color:var(--gold);}
+#mod-nav .mn-download{
+  margin-left:auto;flex-shrink:0;
+  background:rgba(44,217,176,.12);
+  border:1px solid rgba(44,217,176,.35);
+  color:var(--gn);
+  border-radius:6px;
+  padding:.28rem .85rem;
+  font-size:.72rem;font-weight:700;
+  cursor:pointer;font-family:inherit;
+  letter-spacing:.04em;
+  display:flex;align-items:center;gap:.35rem;
+  transition:.2s;text-decoration:none;
+}
+#mod-nav .mn-download:hover{background:rgba(44,217,176,.28);color:#fff;}
 
 /* Slide padding top for navbar */
 .slide{padding-top:41px;}
@@ -656,6 +670,10 @@ table.deck-table tr:nth-child(even) td{background:rgba(0,180,216,.04);}
   <button class="mn-home" onclick="jumpTo(1)" title="Ir al Contenido">&#9776; Contenido</button>
   <div class="mn-sep"></div>
   <button class="mn-btn" id="mn-01" onclick="jumpTo(2)">01: Equipo</button><button class="mn-btn" id="mn-02" onclick="jumpTo(3)">02: Gestión de OTs</button><button class="mn-btn" id="mn-03" onclick="jumpTo(12)">03: Gestión de Tareas</button><button class="mn-btn" id="mn-04" onclick="jumpTo(18)">04: Gestión de Productos</button><button class="mn-btn" id="mn-05" onclick="jumpTo(28)">05: Actividades Complementarias</button><button class="mn-btn" id="mn-06" onclick="jumpTo(33)">06: Recursos Planificación</button><button class="mn-btn" id="mn-07" onclick="jumpTo(35)">07: Gestión Planificación</button><button class="mn-btn" id="mn-08" onclick="jumpTo(52)">08: Gestión Proyectos</button>
+  <div class="mn-sep"></div>
+  <a class="mn-download" id="btn-download" href="#" download="Capacitacion_Cortesias.html" title="Descargar presentación">
+    &#8595; Descargar
+  </a>
 </nav>
 <div id="deck">
 <section class="slide theme-navy slide-cover active" data-index="0" id="slide-0">
@@ -3350,5 +3368,20 @@ document.addEventListener('touchend', e => {
   touchX = null;
 });
 update();
+
+// Download button
+document.getElementById('btn-download').addEventListener('click', function(e){
+  e.preventDefault();
+  const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  const blob = new Blob([html], {type:'text/html;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Capacitacion_Cortesias.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
 </script>
 </body></html>
